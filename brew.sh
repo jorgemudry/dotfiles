@@ -14,6 +14,10 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
+brew tap homebrew/versions
+brew tap phinze/homebrew-cask
+brew tap homebrew/dupes
+
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
@@ -44,7 +48,6 @@ brew install narwhal
 brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/screen
-brew install homebrew/php/php55 --with-gmp
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 brew install bfg
@@ -73,8 +76,6 @@ brew install xz
 # Install other useful binaries.
 brew install ack
 brew install git
-brew install php55-mcrypt
-brew install mysql
 brew install ssh-copy-id
 brew install imagemagick --with-webp
 brew install lua
@@ -87,6 +88,9 @@ brew install rhino
 brew install tree
 brew install webkit2png
 brew install zopfli
+brew install php55
+brew install php55-mcrypt
+brew install mysql
 
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
