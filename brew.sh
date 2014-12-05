@@ -110,6 +110,8 @@ brew cask install jumpcut
 # Messaging
 brew cask install skype
 brew cask install google-hangouts
+brew cask install limechat
+brew cask install telegram
 
 # Media
 brew cask install vlc
