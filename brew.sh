@@ -140,6 +140,7 @@ brew cask install cleanmymac
 brew cask install android-file-transfer
 brew cask install cheatsheet
 brew cask install onyx
+brew cask install cronnix
 
 # Remove outdated versions from the cellar.
 brew cleanup
