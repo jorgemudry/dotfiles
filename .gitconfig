@@ -1,3 +1,10 @@
+[user]
+	name = Jorge Mudry
+	email = jorgemudry@gmail.com
+
+[github]
+	user = jorgemudry
+
 [alias]
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
@@ -88,6 +95,9 @@
 	# Make `git rebase` safer on OS X
 	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
 	trustctime = false
+
+	# Default editor
+	editor = sublime -n -w
 
 [color]
 

@@ -72,8 +72,10 @@ brew install xz
 
 # Install other useful binaries.
 brew install ack
-#brew install exiv2
 brew install git
+brew install php55-mcrypt
+brew install mysql
+brew install ssh-copy-id
 brew install imagemagick --with-webp
 brew install lua
 brew install lynx
@@ -89,6 +91,53 @@ brew install zopfli
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
 brew install node
+
+# Install cask to be able to install other apps
+brew install brew-cask
+
+# Install cask apps
+# Internet
+brew cask install google-chrome
+brew cask install firefox
+
+# Productivity
+brew cask install dropbox
+brew cask install google-drive
+brew cask install evernote
+brew cask install skitch
+brew cask install jumpcut
+
+# Messaging
+brew cask install skype
+brew cask install google-hangouts
+
+# Media
+brew cask install vlc
+brew cask install spotify
+
+# File Transfer
+brew cask install transmission
+brew cask install utorrent
+brew cask install transmit
+
+# Development
+brew cask install sequel-pro
+brew cask install vagrant
+brew cask install sublime-text
+brew cask install virtualbox
+
+# Utilities
+brew cask install iterm2
+brew cask install the-unarchiver
+brew cask install caffeine
+brew cask install flux
+brew cask install onepassword
+brew cask install coconutbattery
+brew cask install spectacle
+brew cask install cleanmymac
+brew cask install android-file-transfer
+brew cask install cheatsheet
+brew cask install onyx
 
 # Remove outdated versions from the cellar.
 brew cleanup
