@@ -76,6 +76,14 @@
 		fi \
 	}; f"
 
+	co = checkout
+	cam = commit -am
+	st = status
+	undo = reset --soft HEAD^
+	undoall = reset --hard
+	untrack = update-index --assume-unchanged
+	track = update-index --no-assume-unchanged
+
 [apply]
 
 	# Detect whitespace errors when applying a patch
