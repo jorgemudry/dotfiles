@@ -88,8 +88,7 @@ brew install rhino
 brew install tree
 brew install webkit2png
 brew install zopfli
-brew install php55
-brew install php55-mcrypt
+brew install homebrew/php/php55-mcrypt
 brew install mysql
 
 # Install Node.js. Note: this installs `npm` too, using the recommended
