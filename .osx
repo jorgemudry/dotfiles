@@ -747,6 +747,13 @@ defaults write com.twitter.twitter-mac HideInBackground -bool true
 curl -L http://install.ohmyz.sh | sh
 
 ###############################################################################
+# Composer                                                                    #
+###############################################################################
+
+# Install Composer Globally
+curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
