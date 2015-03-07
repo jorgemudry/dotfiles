@@ -124,6 +124,7 @@ brew cask install spotify
 brew cask install transmission
 brew cask install utorrent
 brew cask install transmit
+brew cask install bittorrent-sync
 
 # Development
 brew cask install sequel-pro
