@@ -90,6 +90,7 @@ brew install webkit2png
 # brew install zopfli
 brew install homebrew/php/php55-mcrypt
 brew install mysql
+brew install httpie
 
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
@@ -114,7 +115,7 @@ brew cask install evernote
 brew cask install skype
 # brew cask install google-hangouts
 # brew cask install limechat
-brew cask install telegram
+# brew cask install telegram
 brew cask install hipchat
 
 # Media
@@ -130,7 +131,7 @@ brew cask install bittorrent-sync
 # Development
 brew cask install sequel-pro
 brew cask install vagrant
-brew cask install sublime-text
+# brew cask install sublime-text
 brew cask install virtualbox
 brew cask install paw
 
