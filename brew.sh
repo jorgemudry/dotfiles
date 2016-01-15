@@ -121,6 +121,8 @@ brew cask install hipchat
 # Media
 brew cask install vlc
 brew cask install spotify
+#https://github.com/Marginal/QLVideo
+brew cask install qlvideo
 
 # File Transfer
 brew cask install transmission

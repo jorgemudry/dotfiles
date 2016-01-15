@@ -753,6 +753,9 @@ curl -L http://install.ohmyz.sh | sh
 # Install Composer Globally
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+# Install PsySH Globally
+/usr/local/bin/composer g require psy/psysh:@stable
+
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
