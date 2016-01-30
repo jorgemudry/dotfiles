@@ -756,6 +756,10 @@ curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin
 # Install PsySH Globally
 /usr/local/bin/composer g require psy/psysh:@stable
 
+# Install Prestissimo Globally
+# https://github.com/hirak/prestissimo
+/usr/local/bin/composer global require hirak/prestissimo
+
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
