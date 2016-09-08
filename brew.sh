@@ -120,7 +120,6 @@ brew cask install skype
 # brew cask install limechat
 # brew cask install telegram
 brew cask install hipchat
-brew cask install hipchat
 brew cask install slack
 
 # Media
