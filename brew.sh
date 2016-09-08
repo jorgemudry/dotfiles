@@ -8,6 +8,9 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.osx` has finished.
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# Install HomeBrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 # Make sure we’re using the latest Homebrew.
 brew update
 
@@ -88,7 +91,7 @@ brew install rename
 brew install tree
 brew install webkit2png
 # brew install zopfli
-brew install homebrew/php/php55-mcrypt
+brew install homebrew/php/php70-mcrypt
 brew install mysql
 brew install httpie
 
@@ -117,6 +120,8 @@ brew cask install skype
 # brew cask install limechat
 # brew cask install telegram
 brew cask install hipchat
+brew cask install hipchat
+brew cask install slack
 
 # Media
 brew cask install vlc
@@ -133,7 +138,7 @@ brew cask install bittorrent-sync
 # Development
 brew cask install sequel-pro
 brew cask install vagrant
-# brew cask install sublime-text
+brew cask install sublime-text
 brew cask install virtualbox
 brew cask install paw
 
@@ -142,7 +147,7 @@ brew cask install iterm2
 brew cask install the-unarchiver
 brew cask install caffeine
 brew cask install flux
-brew cask install onepassword
+# brew cask install onepassword
 brew cask install coconutbattery
 brew cask install spectacle
 brew cask install android-file-transfer
