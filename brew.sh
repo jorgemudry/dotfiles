@@ -9,6 +9,7 @@ brew upgrade
 brew tap homebrew/versions
 brew tap phinze/homebrew-cask
 brew tap homebrew/dupes
+brew tap caskroom/cask
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -81,16 +82,14 @@ brew install tree
 brew install webkit2png
 # brew install zopfli
 brew install homebrew/php/php70-mcrypt
-brew install mysql
+# brew install mysql
 brew install httpie
 brew install mackup
+brew install mc
 
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
 brew install node010
-
-# Install cask to be able to install other apps
-brew install brew-cask
 
 # Install cask apps
 # Internet
@@ -109,7 +108,7 @@ brew cask install skype
 # brew cask install google-hangouts
 # brew cask install limechat
 # brew cask install telegram
-brew cask install hipchat
+# brew cask install hipchat
 brew cask install slack
 
 # Media
@@ -130,6 +129,7 @@ brew cask install vagrant
 brew cask install sublime-text
 brew cask install virtualbox
 brew cask install paw
+brew cask install medis
 
 # Utilities
 brew cask install iterm2

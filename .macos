@@ -87,6 +87,9 @@ defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
 # Disable the crash reporter
 #defaults write com.apple.CrashReporter DialogType -string "none"
 
+# Make Crash Reporter appear as a notification
+defaults write com.apple.CrashReporter UseUNC 1
+
 # Set Help Viewer windows to non-floating mode
 defaults write com.apple.helpviewer DevMode -bool true
 
@@ -159,7 +162,7 @@ defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClic
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
 
 # Disable “natural” (Lion-style) scrolling
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+# defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
@@ -237,10 +240,10 @@ defaults write com.apple.finder QuitMenuItem -bool true
 # Finder: disable window animations and Get Info animations
 defaults write com.apple.finder DisableAllAnimations -bool true
 
-# Set Desktop as the default location for new Finder windows
+# Set Home as the default location for new Finder windows
 # For other paths, use `PfLo` and `file:///full/path/here/`
 defaults write com.apple.finder NewWindowTarget -string "PfDe"
-defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desktop/"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 
 # Show icons for hard drives, servers, and removable media on the desktop
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
@@ -383,6 +386,9 @@ defaults write com.apple.dock expose-group-by-app -bool false
 
 # Disable Dashboard
 # defaults write com.apple.dashboard mcx-disabled -bool true
+
+# Set Mission Control as a separated space
+defaults write com.apple.dashboard "dashboard-enabled-state" 2
 
 # Don’t show Dashboard as a Space
 # defaults write com.apple.dock dashboard-in-overlay -bool true
@@ -625,6 +631,18 @@ defaults write com.apple.terminal SecureKeyboardEntry -bool true
 # Don’t display the annoying prompt when quitting iTerm
 # defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
+# Disable iTerm2 Native Full Screen Window
+defaults write com.googlecode.iterm2 UseLionStyleFullscreen -bool false
+
+# Enable iTerm2 HotKey to Hide/Show Window (The key set is "`")
+defaults write com.googlecode.iterm2 HotkeyModifiers -int 256
+defaults write com.googlecode.iterm2 HotkeyCode -int 50
+defaults write com.googlecode.iterm2 HotkeyChar -int 96
+defaults write com.googlecode.iterm2 Hotkey -bool true
+
+# Disable Tab Bar in Full Screen
+defaults write com.googlecode.iterm2 ShowFullScreenTabBar -bool false
+
 ###############################################################################
 # Time Machine                                                                #
 ###############################################################################
@@ -847,7 +865,8 @@ curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin
 ###############################################################################
 
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
-	"Dock" "Finder" "Mail" "Messages" "Safari" "SizeUp" "SystemUIServer" \
+    "Dock" "Finder" "Mail" "Messages" "Safari" "SizeUp" "SystemUIServer" \
+	"iTerm" "Chrome" "Photos" \
 	"Terminal" "Transmission" "Twitter" "iCal"; do
 	killall "${app}" > /dev/null 2>&1
 done
