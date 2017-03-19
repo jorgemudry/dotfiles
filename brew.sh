@@ -86,6 +86,7 @@ brew install homebrew/php/php70-mcrypt
 brew install httpie
 brew install mackup
 brew install mc
+brew install htop
 
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
