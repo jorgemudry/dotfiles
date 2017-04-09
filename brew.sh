@@ -131,6 +131,7 @@ brew cask install sublime-text
 brew cask install virtualbox
 brew cask install paw
 brew cask install medis
+brew cask install insomnia
 
 # Utilities
 brew cask install iterm2
