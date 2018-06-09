@@ -6,9 +6,7 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
-brew tap homebrew/versions
 brew tap phinze/homebrew-cask
-brew tap homebrew/dupes
 brew tap caskroom/cask
 
 # Install GNU core utilities (those that come with OS X are outdated).
@@ -131,7 +129,7 @@ brew cask install vagrant
 brew cask install sublime-text
 brew cask install virtualbox
 brew cask install paw
-brew cask install medis
+# brew cask install medis
 brew cask install insomnia
 
 # Utilities
