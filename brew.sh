@@ -81,7 +81,7 @@ brew install rename
 brew install tree
 brew install webkit2png
 # brew install zopfli
-brew install homebrew/php/php70-mcrypt
+brew install php@7.1
 # brew install mysql
 brew install httpie
 brew install mackup
@@ -90,16 +90,17 @@ brew install htop
 
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
-brew install node010
+brew install node
 
 # Install cask apps
 # Internet
 brew cask install google-chrome
 brew cask install firefox
+brew cask install opera
 
 # Productivity
 brew cask install dropbox
-brew cask install google-drive
+# brew cask install google-drive
 brew cask install evernote
 # brew cask install skitch
 # brew cask install jumpcut
@@ -122,7 +123,7 @@ brew cask install qlvideo
 brew cask install transmission
 # brew cask install utorrent
 # brew cask install transmit
-brew cask install bittorrent-sync
+# brew cask install bittorrent-sync
 
 # Development
 brew cask install sequel-pro
@@ -137,7 +138,7 @@ brew cask install insomnia
 brew cask install iterm2
 brew cask install the-unarchiver
 brew cask install caffeine
-brew cask install flux
+# brew cask install flux
 # brew cask install onepassword
 brew cask install coconutbattery
 brew cask install spectacle
@@ -145,7 +146,7 @@ brew cask install android-file-transfer
 # brew cask install cheatsheet
 # brew cask install onyx
 brew cask install cronnix
-brew cask install tunnelbear
+# brew cask install tunnelbear
 
 # Remove outdated versions from the cellar.
 brew cleanup
