@@ -86,6 +86,24 @@ brew install mackup
 brew install mc
 brew install htop
 
+##################################
+# https://remysharp.com/2018/08/23/cli-improved
+##################################
+# https://github.com/sharkdp/bat
+brew install bat
+# http://denilson.sa.nom.br/prettyping/
+brew install prettyping
+# https://github.com/junegunn/fzf
+brew install fzf
+# https://github.com/so-fancy/diff-so-fancy
+brew install diff-so-fancy
+# https://github.com/sharkdp/fd/
+brew install fd
+# https://dev.yorhel.nl/ncdu
+brew install ncdu
+# https://tldr.sh/
+brew install tldr
+
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
 brew install node
